@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-import environ
+
 import os
 from pathlib import Path
 
@@ -28,8 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-env = environ.Env()
-environ.Env.read_env()
+
 # Application definition
 
 INSTALLED_APPS = [
